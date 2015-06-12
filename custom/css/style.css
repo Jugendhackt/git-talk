@@ -1,0 +1,13 @@
+.reveal section img.none-border {
+
+    border: none;
+    box-shadow: none;
+}
+
+.reveal table tr td.red-color {
+    color: red;
+}
+
+.reveal table tr td.green-color {
+    color: green;
+}

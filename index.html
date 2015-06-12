@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Jugendhackt Süd - Github</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+        <!-- Code syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+         var link = document.createElement( 'link' );
+         link.rel = 'stylesheet';
+         link.type = 'text/css';
+         link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+         document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <!-- custom styles -->
+        <link rel="stylesheet" href="custom/css/style.css">
+
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <div class="slides">
+                <!-- BEGIN OF SLIDES -->
+
+                <section>
+                    <img class="none-border" data-src="images/jugendhackt-logo.png" width="170">
+                    <h1>Github</h1>
+                    <h3>Gemeinsam mit Code die Welt verbessern</h3>
+                    <p>
+                        <small>Christian van Onzenoodt ● <a href="https://github.com/onc">github.com/onc</a></small>
+                    </p>
+                    <aside class="notes">
+                        <p>
+                            Fragen
+                        </p>
+                        <p>
+                            Wer kennt github?
+                        </p>
+                        <p>
+                            Hat mal was herrunter/hoch geladen?
+                        </p>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Was ist Github?</h2>
+                    <ul>
+                        <li>Möglichkeit gemeinsam an Code zu arbeiten</li>
+                        <li>Soziales Netzwerk</li>
+                        <li>Webhoster für Git</li>
+                    </ul>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <section>
+                    <h3>Wer ist so auf GitHub?</h3>
+                    <ul>
+                        <li><a href="https://github.com/twbs/bootstrap">twbs/bootstrap</a></li>
+                        <li><a href="https://github.com/joyent/node">joyent/node (nodejs)</a></li>
+                        <li><a href="https://github.com/jquery/jquery">jquery/jquery</a></li>
+                        <li><a href="https://github.com/rails/rails">rails/rails</a></li>
+                        <li><a href="https://github.com/facebook/react">facebook/react</a></li>
+                        <li><a href="https://github.com/django/django">django/django</a></li>
+                        <li><a href="https://github.com/angular/angular.js">angular/angular.js</a></li>
+                        <li><a href="https://github.com/adobe/brackets">adobe/brackets</a></li>
+                        <li><a href="https://github.com/zurb/foundation">zurb/foundation</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Warte... Was ist Git?</h2>
+                    <ul>
+                        <li>Versionsverwaltung für Dateien</li>
+                        <li>Strg-Z für Profis</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Was heißt Versionsverwaltung?</h2>
+                    <img class="none-border" data-src="images/versionierung.png">
+                </section>
+
+                <section>
+                    <h2>Wie bedient man das denn?</h2>
+
+                    <p class="fragment" data-autoslide="1">
+                        Kopie auf den eigenen Rechner laden
+                    </p>
+                    <pre class="fragment"><code class="shell" data-trim>
+$ git clone https://github.com/...
+                    </code></pre>
+
+                    <p class="fragment" data-autoslide="1">
+                        Dateien zum Index hinzufügen
+                    </p>
+                    <pre class="fragment"><code class="shell" data-trim>
+$ git add readme.md
+                    </code></pre>
+
+                    <p class="fragment" data-autoslide="1">
+                        Commit mit Nachricht abschließen
+                    </p>
+                    <pre class="fragment"><code class="shell" data-trim>
+$ git commit -m "readme bearbeitet"
+                    </code></pre>
+
+                    <p class="fragment" data-autoslide="1">
+                        Veränderungen auf den Server laden
+                    </p>
+                    <pre class="fragment"><code class="shell" data-trim>
+$ git push origin master
+                    </code></pre>
+                </section>
+
+                <section>
+                    <h2>Wichtig!</h2>
+
+                    <span class="fragment">
+                        <p>
+                            Bevor die Arbeit los geht einmal
+                        </p>
+                        <pre><code class="shell" data-trim>
+$ git pull
+                        </code></pre>
+                        <p>
+                            Um den aktuellen Stand zu bekommen
+                        </p>
+                    </span>
+                </section>
+
+                <section>
+                    <h2>Nützlich</h2>
+
+                    <p>
+                        Stand des lokalen Repos einsehen
+                    </p>
+                    <pre><code class="shell" data-trim>
+$ git status
+                    </code></pre>
+
+                </section>
+
+                <section>
+                    <h2>Tipps für GitHub</h2>
+                </section>
+
+                <section>
+                    <h2>Readme</h2>
+                    <p>
+                        Zeige was du machst und wie es bedient wird
+                    </p>
+
+                    <pre><code class="md" data-trim>
+# Das ist unser tolles Projekt
+
+Es kann Einhörner auf Regenbögen tanzen lassen.
+Wenn du es benutzen willst, dann mach das:
+
+* lade es dir runter
+* führe die Datei `program` aus
+
+Wenn ein Fehler kommt, dann schau mal [hier](http://hilfe.de)
+                    </code></pre>
+
+                    <p>
+                        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">
+                            <small>Markdown Spickzettel</small>
+                        </a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Wähle eine Lizenz für dein Projekt</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>MIT Lizenz (Expat)</th>
+                            <th>GNU General Public License v2.0 (GPL)</th>
+                        </tr>
+                        <tr>
+                            <td>einsehen</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>verwenden</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>kopieren</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr>
+                            <td>verändern</td>
+                            <td class="green-color">✓</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                        <tr class="fragment">
+                            <td>copyleft</td>
+                            <td class="red-color">✗</td>
+                            <td class="green-color">✓</td>
+                        </tr>
+                    </table>
+
+                </section>
+
+                <section>
+                    <h2>Klingt cool! würde ich gerne ausprobieren</h2>
+
+                    <p>
+                        <a href="https://git-scm.com/download/win">Windows</a>
+                    </p>
+                    <p>
+                        <a href="https://git-scm.com/download/mac">Max OSX</a>
+                    </p>
+                    <p>
+                        Linux - Wie immer im Paket-Manager ;)
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Gibt es da noch mehr?</h2>
+                    <p>Anfänger:
+                        <a href="https://rogerdudler.github.io/git-guide/index.de.html">git - Der einfache Einstieg</a>
+                    </p>
+                    <p>Fortgeschrittene:
+                        <a href="https://git-scm.com/book/de/v1/Git-Branching-Einfaches-Branching-und-Merging">Git Branching</a>
+                    </p>
+                    <p>Profi:
+                        <a href="http://nvie.com/posts/a-successful-git-branching-model/">A successful git branching model (englisch)</a>
+                    </p>
+                </section>
+
+                <section>
+                    <h2>War mir zu schnell, wo kann ich das nochmal anschaun?</h2>
+                    <a href="">hier</a>
+                </section>
+
+                <section>
+                    <h1>happy hacking</h1>
+                </section>
+
+                <!-- END OF SLIDES -->
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+         // Full list of configuration options available at:
+         // https://github.com/hakimel/reveal.js#configuration
+         Reveal.initialize({
+             controls: true,
+             progress: true,
+             history: true,
+             center: true,
+
+             transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+             // Optional reveal.js plugins
+             dependencies: [
+                 { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                 { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                 { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                 { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+                 { src: 'plugin/zoom-js/zoom.js', async: true },
+                 { src: 'plugin/notes/notes.js', async: true }
+             ]
+         });
+
+        </script>
+
+    </body>
+</html>
